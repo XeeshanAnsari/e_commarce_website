@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+   include("includes/db.php");
+?>
+ <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,9 +48,48 @@
             
              <!--main Body-->
              
-             <div class="container">
+             <div class="">
                  <div class="row">
-                     <div class="col-md-3" id="left-side">gou</div>
+                     <div class="col-md-3" id="left-side">
+                         
+              
+                         <ul class="nav nav-pills nav-stacked">
+                             <li role="presentation" class="active"><a href="#">Categories</a></li>
+                            
+                          <?php
+           
+                           global $con;
+                           $get_cats ="select * from categories ";
+                           $run_cats =mysqli_query($con,$get_cats);
+         
+                             while($row = mysqli_fetch_array($run_cats)){
+                                 $cat_id = $row['cat_id'];
+                                 $cat_title = $row['cat_title'];
+            
+                              echo "<li role='presentation'><a href='#'>$cat_title</a></li>";
+                            }                
+                          ?>  
+                             
+                         </ul>
+                         
+                         <ul class="nav nav-pills nav-stacked">
+                             <li role="presentation" class="active"><a href="#">Brands</a></li>
+                             <?php
+           
+                           global $con;
+                           $get_brands ="select * from brands ";
+                           $run_brands =mysqli_query($con,$get_brands);
+         
+                             while($row = mysqli_fetch_array($run_brands)){
+                                 $brand_id = $row['brand_id'];
+                                 $brand_title = $row['brand_title'];
+            
+                              echo "<li role='presentation'><a href='#'>$brand_title</a></li>";
+                            }                
+                          ?>  
+                                                 
+                         </ul>
+                     </div>
                      <div class="col-md-9">hpigp</div>
                  </div>
                  
