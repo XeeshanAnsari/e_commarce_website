@@ -1,14 +1,9 @@
-body{
-    
-}
 #insert_data label{
     display: block;
 }
 .input_fields{
-    width: 20%;
+    width: 30%;
+    padding: 1%;
     margin: 1%;
+    border-bottom: 2px solid gray;
 }
-
-
-
-
