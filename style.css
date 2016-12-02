@@ -22,11 +22,15 @@ body{
     float: right;
 }
 
+#product-main-box{
+  
+}
+
 #product-box{
     background-color: #F8F8F8;
-    margin: 1% 1% 1% 0% ;
     padding: 0px  ;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    
     
 }
 #product-img{
@@ -37,6 +41,9 @@ body{
 #product-title{
     text-align: center;
     
+}
+#product_price{
+    text-align: center;
 }
 #cart-btn{
     
