@@ -10,5 +10,16 @@ body{
 }
 
 
+/*  MAIN CONTAINER   */
 
+#headline{
+ height: 50px;
+ width: 100%;
+ color: F8F8F8;    
+ float:left;
+  
+}
 
+#product-box{
+    background-color: gray;
+}
